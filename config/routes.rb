@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     end
   end
   resources :users, only: :show
+  resources :likes, only: %i(create destroy)
 end
 
 
